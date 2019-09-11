@@ -1,6 +1,6 @@
 Shell
 -------
-###Scripts to help understand bash, shell, and the command line
+### Scripts to help understand bash, shell, and the command line
 
 0. Prints the current working directory.
 1. Display the contents list of your current directory.
