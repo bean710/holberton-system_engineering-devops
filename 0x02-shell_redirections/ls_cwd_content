@@ -1,0 +1,35 @@
+total 128
+drwxrwxr-x 2 vagrant vagrant 4096 Sep 14 23:40 .
+drwxrwxr-x 6 vagrant vagrant 4096 Sep 14 20:09 ..
+-rwxrw-r-- 1 vagrant vagrant   32 Sep 14 20:17 0-hello_world
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 100-empty_casks
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 101-gifs
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 102-acrostic
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 103-the_biggest_fan
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 10-no_more_js
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 11-directories
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 12-newest_files
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 13-unique
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 14-findthatword
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 15-countthatword
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 16-whatsnext
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 17-hidethisword
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 18-letteronly
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 19-AZ
+-rwxrw-r-- 1 vagrant vagrant   31 Sep 14 20:24 1-confused_smiley
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 20-hiago
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 21-reverse
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 22-users_and_homes
+-rwxrw-r-- 1 vagrant vagrant   28 Sep 14 20:27 2-hellofile
+-rwxrw-r-- 1 vagrant vagrant   39 Sep 14 23:07 3-twofiles
+-rwxrw-r-- 1 vagrant vagrant   29 Sep 14 23:11 4-lastlines
+-rwxrw-r-- 1 vagrant vagrant   29 Sep 14 23:12 5-firstlines
+-rwxrw-r-- 1 vagrant vagrant   34 Sep 14 23:21 6-third_line
+-rwxrw-r-- 1 vagrant vagrant  115 Sep 14 23:39 7-file
+-rwxrw-r-- 1 vagrant vagrant   36 Sep 14 23:40 8-cwd_state
+-rwxrw-r-- 1 vagrant vagrant   12 Sep 14 20:12 9-duplicate_last_line
+-rw-rw-r-- 1 vagrant vagrant    3 Sep 14 20:12 .gitignore
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 14 23:34 \\*\\\'"Holberton School"\\'\\\*$\\?\\*\\*\\*\\*\\*\:\)
+-rw-rw-r-- 1 vagrant vagrant   19 Sep 14 23:38 \\*\\\'"Holberton School"\\'\\\*$\\?\\*\\*\\*\\*\\*\:\).txt
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 14 23:40 ls_cwd_content
+-rwxrw-r-- 1 vagrant vagrant   15 Sep 14 20:09 README.md
