@@ -1,1 +1,2 @@
 #!/bin/bash
+find -type f -printf "%f\n" | sort -f -s
