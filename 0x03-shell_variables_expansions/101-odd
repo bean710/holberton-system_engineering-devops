@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n '1~2p'
+sed '0~2d'
