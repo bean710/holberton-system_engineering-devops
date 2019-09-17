@@ -1,2 +1,2 @@
 #!/bin/bash
-sed '0~2d'
+awk 'NR%2==1'
