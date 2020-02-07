@@ -2,5 +2,5 @@
 #Prints the results of ls, one entry per line
 for x in *
 do
-	echo "$x"
+	echo "$x" | cut -d"-" -f2-
 done
