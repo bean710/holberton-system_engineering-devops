@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Prints a pseudo-clock
 h=0
 
 while [ $h -le 12 ]

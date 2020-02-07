@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Prints the contents of the /etc/passwd file, stylized
 IFS=":"
 while read name pass uid gid gecos hdir shell
 do

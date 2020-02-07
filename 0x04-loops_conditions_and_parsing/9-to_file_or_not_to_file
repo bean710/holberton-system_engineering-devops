@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Prints ertian strings depending on file status
 if [ -e "holbertonschool" ]
 then
 	echo "holbertonschool file exists"
