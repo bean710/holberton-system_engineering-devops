@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-for x in $(ls ./*)
+for x in *
 do
 	echo "$x"
 done
