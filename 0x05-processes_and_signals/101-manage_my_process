@@ -17,7 +17,7 @@ case $1 in
 		sudo rm -f /var/run/my_process.pid
 		sudo ./manage_my_process &
 		echo "$!" > /var/run/my_process.pid
-		echo "manage_my_progess restarted"
+		echo "manage_my_process restarted"
 		;;
 	*)
 		echo "Usage: manage_my_process {start|stop|restart}"
