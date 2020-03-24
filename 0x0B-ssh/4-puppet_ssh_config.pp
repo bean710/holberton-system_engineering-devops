@@ -8,5 +8,4 @@ file_line { 'Refuse password authentication':
 file_line { 'Specify identity file':
   path  => '~/.ssh/config',
   line  => 'IdentityFile ~/.ssh/holberton',
-  match => 'IdentityFile .*',
 }
