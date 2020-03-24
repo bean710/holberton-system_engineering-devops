@@ -1,6 +1,12 @@
 # This puppet file configures the SSH config
-file { 'ssh config'
-  path    => '~/.ssh/config',
-  ensure  => 'file',
-  content => "KbdInteractiveAuthentication no\nIdentityFile ~/.ssh/holberton"
+file_line { 'Refuse password authentication':
+  path  => '~/.ssh/config',
+  line  => 'KbdInteractiveAuthentication no',
+  match => 'KbdInteractiveAuthentication yes',
+}
+
+file_line { 'Specify identity file':
+  path  => '~/.ssh/config',
+  line  => 'IdentityFile ~/.ssh/holberton',
+  match => 'IdentityFile .*',
 }
