@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Installs and properly configures an NGINX server
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+sudo echo "http {
+        server {
+                listen 80;
+                location / {
+                        root /data/www;
+                }
+        }
+}" > /etc/nginx/nginx.conf
+
+if [ ! -d "/data" ]
+then
+        mkdir /data
+fi
+
+if [ ! -d "/data/www" ]
+then
+        mkdir /data/www
+fi
+
+echo "Holberton School" > /data/www/index.html
