@@ -7,6 +7,4 @@ then
 	exit
 fi
 
-echo "scp -T -i $4 $1 $3@$2:~/"
-
 scp -T -i $4 $1 $3@$2:~/
