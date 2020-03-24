@@ -1,3 +1,4 @@
+# This makes sure there is a holberton file with specific contents
 file { '/tmp/holberton':
   ensure  => file,
   group   => www-data,
