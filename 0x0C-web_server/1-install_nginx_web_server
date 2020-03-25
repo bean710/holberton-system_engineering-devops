@@ -17,4 +17,5 @@ mkdir -p /data/www
 
 echo "Holberton School" > /data/www/index.html
 
+sudo ufw allow http
 service nginx start
