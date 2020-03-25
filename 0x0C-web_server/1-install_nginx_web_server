@@ -16,3 +16,5 @@ sudo echo "http {
 mkdir -p /data/www
 
 echo "Holberton School" > /data/www/index.html
+
+service nginx start
