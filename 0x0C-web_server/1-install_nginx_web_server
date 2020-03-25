@@ -13,14 +13,6 @@ sudo echo "http {
         }
 }" > /etc/nginx/nginx.conf
 
-if [ ! -d "/data" ]
-then
-        mkdir /data
-fi
-
-if [ ! -d "/data/www" ]
-then
-        mkdir /data/www
-fi
+mkdir -p /data/www
 
 echo "Holberton School" > /data/www/index.html
