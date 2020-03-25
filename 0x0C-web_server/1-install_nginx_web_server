@@ -4,18 +4,7 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 
-sudo echo "http {
-        server {
-                listen 80;
-                location / {
-                        root /data/www;
-                }
-        }
-}" > /etc/nginx/nginx.conf
-
-mkdir -p /data/www
-
-echo "Holberton School" > /data/www/index.html
+echo "Holberton School" > /var/www/html/index.html
 
 sudo ufw allow 'Nginx HTTP'
 service nginx start
