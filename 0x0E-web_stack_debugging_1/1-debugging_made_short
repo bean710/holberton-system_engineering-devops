@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # This script changes the config without killing the worker processes
-service nginx stop
 sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
-pkill -f -sig 1 "/usr/sbin/nginx"
+pkill -1 -f "/usr/sbin/nginx"
