@@ -18,6 +18,4 @@ then
 	print_dig "lb-01" "$1"
 	print_dig "web-01" "$1"
 	print_dig "web-02" "$1"
-else
-	echo "Invalid number of commands"
 fi
