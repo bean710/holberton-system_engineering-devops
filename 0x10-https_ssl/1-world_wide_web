@@ -3,11 +3,10 @@
 
 print_dig () {
 	OUT=$( dig "$1.$2" | grep "^$1." )
-	REC=$( echo "$OUT" | cut -f4 -d" " )
-	DEST=$( echo "$OUT" | cut -f5 -d" " )
+	REC=$( echo "$OUT" | cut -f4 )
+	DEST=$( echo "$OUT" | cut -f5 )
 	awk -v subd="$1" -v rec="$REC" -v dest="$DEST" \
-		'BEGIN {print "The subdomain "subd" is a "rec
-			"record and points to "dest}'
+'BEGIN {print "The subdomain "subd" is a "rec" record and points to "dest}'
 }
 
 if [[ $# -eq 2 ]]
