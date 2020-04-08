@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script does a dig on a domain and its subdomains
+
+print_dig () {
+	OUT=$( dig "$1.$2" | grep "^$1." )
+	REC=$( echo "$OUT" | cut -f4 -d" " )
+	DEST=$( echo "$OUT" | cut -f5 -d" " )
+	awk -v subd="$1" -v rec="$REC" -v dest="$DEST" \
+		'BEGIN {print "The subdomain "subd" is a "rec
+			"record and points to "dest}'
+}
+
+if [[ $# -eq 2 ]]
+then
+	print_dig "$2" "$1"
+elif [[ $# -eq 1 ]]
+then
+	print_dig "lb-01" "$1"
+	print_dig "web-01" "$1"
+	print_dig "web-01" "$1"
+else
+	echo "Invalid number of commands"
+fi
