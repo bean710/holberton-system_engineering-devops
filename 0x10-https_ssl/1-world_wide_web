@@ -5,8 +5,7 @@ print_dig () {
 	OUT=$( dig "$1.$2" | grep "^$1." )
 	REC=$( echo "$OUT" | cut -f4 )
 	DEST=$( echo "$OUT" | cut -f5 )
-	awk -v subd="$1" -v rec="$REC" -v dest="$DEST" \
-'BEGIN {print "The subdomain "subd" is a "rec" record and points to "dest}'
+	awk -v subd="$1" -v rec="$REC" -v dest="$DEST" 'BEGIN {print "The subdomain "subd" is a "rec" record and points to "dest}'
 }
 
 if [[ $# -eq 2 ]]
@@ -18,4 +17,6 @@ then
 	print_dig "lb-01" "$1"
 	print_dig "web-01" "$1"
 	print_dig "web-02" "$1"
+else
+	echo "Invalid number of commands"
 fi
