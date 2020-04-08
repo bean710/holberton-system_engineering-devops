@@ -2,7 +2,7 @@
 # This script does a dig on a domain and its subdomains
 
 print_dig () {
-	OUT=$( dig "$1.$2" | grep -A1 "^$1." )
+	OUT=$( dig "$1.$2" | grep "^$1." )
 	REC=$( echo "$OUT" | cut -f4 )
 	DEST=$( echo "$OUT" | cut -f5 )
 	awk -v subd="$1" -v rec="$REC" -v dest="$DEST" \
