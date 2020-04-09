@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # This script runs whoami as a different user
-su - "$1" -c "whoami"
+sudo -u "$1" whoami
