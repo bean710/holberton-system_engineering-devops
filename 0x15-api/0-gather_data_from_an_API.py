@@ -2,7 +2,6 @@
 """This file uses a testing API to get data"""
 import requests
 import sys
-import json
 
 
 if __name__ == "__main__" and len(sys.argv) >= 2:
