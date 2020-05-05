@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This file uses a testing API to get data and exports it to JSON"""
-import requests
 import json
+import requests
 
 
 if __name__ == "__main__":
