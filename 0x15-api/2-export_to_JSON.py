@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """This file uses a testing API to get data and exports it to JSON"""
+import json
 import requests
 import sys
-import json
 
 
 if __name__ == "__main__" and len(sys.argv) >= 2:
