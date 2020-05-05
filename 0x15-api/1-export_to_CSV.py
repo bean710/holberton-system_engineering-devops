@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """This file uses a testing API to get data and exports it to CSV"""
+import csv
 import requests
 import sys
-import csv
 
 
 if __name__ == "__main__" and len(sys.argv) >= 2:
@@ -19,4 +19,4 @@ if __name__ == "__main__" and len(sys.argv) >= 2:
         csvw = csv.writer(csvfile, delimiter=",", quotechar="\"",
                           quoting=csv.QUOTE_ALL)
         for todo in data:
-            csvw.writerow([name, gid, todo["completed"], todo["title"]])
+            csvw.writerow([gid, name, todo["completed"], todo["title"]])
