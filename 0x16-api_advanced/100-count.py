@@ -12,6 +12,9 @@ def count_words(subreddit, word_list, last="", words={}):
     res = requests.post(url,
                         headers={"User-Agent": "python:com.benkeener:0.0.1"})
 
+    if len(word_list) == 0:
+        return
+
     if words == {}:
         words = {word.lower(): 0 for word in word_list}
 
