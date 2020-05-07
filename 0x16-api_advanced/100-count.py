@@ -21,9 +21,21 @@ def count_words(subreddit, word_list, last="", words={}):
         posts = dat["data"]["children"]
 
         if len(posts) == 0:
-            for word in sorted(words, key=words.get, reverse=True):
-                if (words[word] > 0):
-                    print("{}: {}".format(word, words[word]))
+            ndict = {}
+            for k, v in words.items():
+                if v == 0:
+                    continue
+                if v not in ndict:
+                    ndict[v] = [k]
+                else:
+                    ndict[v].append(k);
+
+            for k in ndict.keys():
+                ndict[k] = sorted(ndict[k])
+
+            for k in sorted(ndict, reverse=True):
+                for word in ndict[k]:
+                    print("{}: {}".format(word, k))
             return
 
         for post in posts:
