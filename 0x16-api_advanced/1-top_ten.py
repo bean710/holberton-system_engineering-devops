@@ -19,7 +19,7 @@ def top_ten(subreddit):
             return
         posts = dat["data"]["children"]
 
-        for post in posts:
+        for post in posts[:10]:
             print (post["data"]["title"])
     except ValueError as e:
         print (e)
