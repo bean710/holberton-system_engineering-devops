@@ -24,3 +24,5 @@ def recurse(subreddit, last="", titles=[]):
         return (recurse(subreddit, posts[-1]["data"]["name"], titles))
     except ValueError:
         return (None)
+    except KeyError:
+        return (None)
