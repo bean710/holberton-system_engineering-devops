@@ -15,12 +15,12 @@ def top_ten(subreddit):
         dat = res.json()
 
         if "data" not in dat:
-            print (None)
+            print(None)
             return
 
         posts = dat["data"]["children"]
 
         for post in posts[:10]:
-            print (post["data"]["title"])
+            print(post["data"]["title"])
     except:
         pass
