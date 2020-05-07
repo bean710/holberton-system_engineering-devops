@@ -6,7 +6,7 @@ import requests
 def top_ten(subreddit):
     """Gets the top posts for a subreddit"""
     url = "http://reddit.com/r/{}/hot.json".format(subreddit)\
-          + "?limit=10"
+          + "?limit=9"
 
     res = requests.post(url,
                         headers={"User-Agent": "python:com.benkeener:0.0.1"})
