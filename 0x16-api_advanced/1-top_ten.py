@@ -15,6 +15,7 @@ def top_ten(subreddit):
         dat = res.json()
 
         if "data" not in dat:
+            print (None)
             return
         posts = dat["data"]["children"]
 
