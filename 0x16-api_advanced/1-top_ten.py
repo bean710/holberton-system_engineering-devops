@@ -17,11 +17,10 @@ def top_ten(subreddit):
         if "data" not in dat:
             print (None)
             return
+
         posts = dat["data"]["children"]
 
         for post in posts[:10]:
             print (post["data"]["title"])
-    except ValueError as e:
-        print (e)
-    except KeyError:
-        return
+    except:
+        pass
