@@ -35,3 +35,5 @@ def count_words(subreddit, word_list, last="", words={}):
                             posts[-1]["data"]["name"], words))
     except ValueError:
         return (None)
+    except KeyError:
+        return (None)
