@@ -6,7 +6,7 @@ import requests
 def top_ten(subreddit):
     """Gets the top posts for a subreddit"""
     url = "http://reddit.com/r/{}/hot.json".format(subreddit)\
-          + "?limit=9"
+          + "?limit=10"
 
     res = requests.post(url,
                         headers={"User-Agent": "python:com.benkeener:0.0.1"})
@@ -23,3 +23,5 @@ def top_ten(subreddit):
             print (post["data"]["title"])
     except ValueError as e:
         print (e)
+    except KeyError:
+        return
