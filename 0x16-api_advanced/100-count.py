@@ -13,7 +13,7 @@ def count_words(subreddit, word_list, last="", words={}):
                         headers={"User-Agent": "python:com.benkeener:0.0.1"})
 
     if words == {}:
-        words = {word: 0 for word in word_list}
+        words = {word.lower(): 0 for word in word_list}
 
     try:
         dat = res.json()
@@ -28,8 +28,8 @@ def count_words(subreddit, word_list, last="", words={}):
 
         for post in posts:
             for word in post["data"]["title"].split(" "):
-                if word in words:
-                    words[word] += 1
+                if word.lower() in words:
+                    words[word.lower()] += 1
 
         return (count_words(subreddit, word_list,
                             posts[-1]["data"]["name"], words))
