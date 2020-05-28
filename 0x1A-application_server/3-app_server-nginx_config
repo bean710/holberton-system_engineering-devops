@@ -1,0 +1,22 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	add_header X-Served-By 1052-web-01;
+
+	location /hbnb_static {alias /data/web_static/current/;}
+	rewrite ^/redirect_me https://youtu.be/WPkMUU9tUqk permanent;
+	rewrite ^/personal_site http://benkeener.com;
+	error_page 404 /404.html;
+
+	root /var/www/html; #For serving the 404 page
+
+	server_name _;
+
+	location /airbnb-onepage/ {
+		proxy_pass http://0.0.0.0:5000/airbnb-onepage;
+	}
+
+	location ~ ^/airbnb-dynamic/number_odd_or_even/(.*) {
+		proxy_pass http://0.0.0.0:5001/number_odd_or_even/$1;
+	}
+}
