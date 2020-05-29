@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#This script reloads gunicorn gracefully
 pkill -o gunicorn --signal HUP
