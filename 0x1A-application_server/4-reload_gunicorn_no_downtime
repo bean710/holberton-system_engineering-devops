@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+pkill -o gunicorn --signal HUP
