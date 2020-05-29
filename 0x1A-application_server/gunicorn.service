@@ -1,0 +1,8 @@
+[Unit]
+Description=Start Gunicorn Web Dynamic
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+ExecStart=/home/ubuntu/.local/bin/gunicorn -w 3 --log-file /tmp/airbnb-error.log --access-logfile /tmp/airbnb-access.log --bind 0.0.0.0:5003 web_dynamic.2-hbnb:app
